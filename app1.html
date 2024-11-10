@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Portfolio Card</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-in-out;
+        }
+        .progress-bar {
+            transition: width 1s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="max-w-md w-full bg-white shadow-lg rounded-lg overflow-hidden fade-in-up transform hover:scale-105 transition duration-300 ease-in-out">
+        <div class="flex items-center justify-center p-6 bg-blue-800">
+            <img src="./public/kal.jpg" alt="Profile Picture" class="w-24 h-24 rounded-full border-4 border-white transform hover:scale-110 transition duration-300 ease-in-out">
+        </div>
+        <div class="p-6 bg-white">
+            <h2 class="text-xl font-semibold text-gray-800">M Ibrahim Tayyab</h2>
+            <p class="text-sm text-gray-600">Team Leader Periodic Review & CDD</p>
+
+            <h3 class="mt-6 text-lg font-semibold text-gray-800">Career Objective</h3>
+            <p class="mt-2 text-sm text-gray-600">
+                Results-oriented banking professional with a solid background in compliance, KYC, and risk management, seeking to leverage analytical skills and regulatory knowledge to enhance operational efficiency and support secure banking practices.
+            </p>
+
+            <h3 class="mt-6 text-lg font-semibold text-gray-800">Certifications</h3>
+            <ul class="list-disc list-inside text-sm text-gray-600">
+                <li>Artificial Intelligence, Web 3.0 & Metaverse - Governor House Karachi (In Progress)</li>
+                <li>Risk Profiling for Trade Customer - NIBAF</li>
+            </ul>
+
+            <h3 class="mt-6 text-lg font-semibold text-gray-800">Contact Info</h3>
+            <p class="text-sm text-gray-600">Phone: 0345-02261837</p>
+            <p class="text-sm text-gray-600">Email: ibrahimtayyab@gmail.com</p>
+            <p class="text-sm text-blue-500">LinkedIn: View Profile</p>
+        </div>
+        <div class="p-6 bg-gray-100">
+            <h3 class="text-lg font-semibold text-gray-800">Education</h3>
+            <p class="text-sm text-gray-600">9th amd Matric in passed amd  University of Sindh</p>
+            <p class="text-sm text-gray-600">Fristyear in computer,Science, University of Sindh</p>
+            <p class="text-sm text-gray-600">Intermediate, Ghulam Hussain Hidayat Higher Secondary School</p>
+
+            <h3 class="mt-6 text-lg font-semibold text-gray-800">Professional Skills</h3>
+            <div class="space-y-2">
+                <div class="flex justify-between text-sm">
+                    <span>Risk Assessment</span><span>80%</span>
+                </div>
+                <div class="w-full bg-gray-300 rounded h-2">
+                    <div class="bg-orange-500 h-2 rounded progress-bar" style="width: 80%"></div>
+                </div>
+                <div class="flex justify-between text-sm">
+                    <span>KYC/AML Compliance</span><span>70%</span>
+                </div>
+                <div class="w-full bg-gray-300 rounded h-2">
+                    <div class="bg-orange-500 h-2 rounded progress-bar" style="width: 70%"></div>
+                </div>
+                <div class="flex justify-between text-sm">
+                    <span>HTML, CSS & JavaScript</span><span>60%</span>
+                </div>
+                <div class="w-full bg-gray-300 rounded h-2">
+                    <div class="bg-orange-500 h-2 rounded progress-bar" style="width: 60%"></div>
+                </div>
+            </div>
+
+            <h3 class="mt-6 text-lg font-semibold text-gray-800">Professional Experience</h3>
+            <p class="text-sm text-gray-600 font-semibold">Team Leader Periodic Review & CDD</p>
+            <p class="text-sm text-gray-600">Faysal Bank Limited</p>
+            <ul class="list-disc list-inside text-sm text-gray-600">
+                <li>Led KYC/AML compliance projects, including remediation of long-outstanding accounts and SBP-audited cases, achieving monthly and yearly targets.</li>
+                <li>Coordinated with branches on KYC matters, provided input on policy development, and supported CDD process improvements.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
